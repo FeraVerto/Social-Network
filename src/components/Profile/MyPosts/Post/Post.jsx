@@ -4,7 +4,7 @@ import s from './Post.module.css';
 const Post = (props) => {
     return (
         <li className={s.item}>
-            <img src="https://34travel.me/media/posts/5a041b2b95800-darth.jpg" alt="Аватарка Дарт Вейдер" />
+            <img src="https://lamcdn.net/furfurmag.ru/post-cover/PYMgsmfOiI0s9C3k8dwZ8Q-default.jpg" alt="Аватарка Фредди" />
             {props.message}
             <div>
                 <span>Like </span>{props.like}

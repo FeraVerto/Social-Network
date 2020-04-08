@@ -1,14 +1,15 @@
 .dialogs {
     display: grid;
     grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 3fr 10fr;
 }
 
-.dialogsItems {
+.dialog {
+    min-width: 150px;
     padding: 10px;
 }
 
-.dialogsItems .active {
+.dialog .active {
     color: green;
 }
 
@@ -17,7 +18,22 @@
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+
+    border: 2px solid #66ff00;
+    box-shadow: 0 0 15px #66ff00;
+}
+
+.linkDialog {
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.dialogName {
+    margin-left: 10px;
 }

@@ -3,11 +3,20 @@ import s from './ProfileInfo.module.css';
 
 const ProfileInfo = () => {
     return (
-        <div>
-            <div className={s.background}>
-                <img  alt='baby-yoda' src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"></img>
+
+        <div className={s.background}>
+            <div className={s.userAvatar}>
+                <img src="https://lamcdn.net/furfurmag.ru/post-cover/PYMgsmfOiI0s9C3k8dwZ8Q-default.jpg" alt="Freddy"></img>
             </div>
-            <div>Avatar + description</div>
+            <div className={s.userInfo}>
+                <span className={s.userName}>Freddy Krueger</span>
+                <ul className={s.listInfo}>
+                    <li>Date of Brith: 2 january</li>
+                    <li>City: Springwood</li>
+                    <li>Education: no</li>
+                    <li>Web Site: kruegerbook.com</li>
+                </ul>
+            </div>
         </div>
     )
 }

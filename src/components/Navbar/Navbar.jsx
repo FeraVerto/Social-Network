@@ -14,7 +14,7 @@ const Navbar = () => {
                 <li className={s.item}><NavLink to="music" activeClassName={s.activeLink}>Music</NavLink></li>
                 <li className={s.item}><NavLink to="setting" activeClassName={s.activeLink}>Settings</NavLink></li>
             </ul>
-            <Friends  />
+            <Friends />
         </nav>
     )
 }

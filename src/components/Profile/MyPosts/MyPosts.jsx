@@ -19,7 +19,7 @@ const MyPosts = (props) => {
     }
 
     return (
-        <div>
+        <div className={s.postsBlock}>
             <h3>My posts</h3>
             <div>
                 <div>
@@ -31,7 +31,7 @@ const MyPosts = (props) => {
             </div>
             <ul className={s.posts}>
                 {postsElements}
-            </ul>
+                  </ul>
         </div>
     );
 }

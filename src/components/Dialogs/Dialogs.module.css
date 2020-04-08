@@ -1,7 +1,16 @@
 .dialogs {
+    margin-left: 15px;
+
     display: grid;
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
+
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.8;
+
+    border: 4px solid #66ff00;
+    box-shadow: 0 0 15px #66ff00;
 }
 
 .dialogsItems {
@@ -13,7 +22,13 @@
 }
 
 .messages {
+    margin-right: 20px;
     padding: 10px;
+}
+
+.messageAdd {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .addText {
@@ -22,7 +37,7 @@
 
 .button {
     display: block;
-    width: 100%;
+    width: 101%;
     height: 40px;
     text-transform: uppercase;
 }

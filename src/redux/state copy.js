@@ -58,7 +58,7 @@ let store = {
     },
 
     updateNewPostText(newPostText) {
-        this._state.profilePage.newPostText = newPostText;
+        this._state.profilePage.newPostText = -*newPostText;/
         this.rerenderEntireTree(this._state);
     },
 
