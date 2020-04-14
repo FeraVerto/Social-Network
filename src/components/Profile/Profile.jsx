@@ -5,10 +5,11 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 
 const Profile = (props) => {
+    debugger;
     return (
         <main className={s.mainContent}>
-            <ProfileInfo />
-            <MyPosts posts={props.state.posts} newPostText={props.state.newPostText} addPost={props.addPost} updateNewPostText={props.updateNewPostText} />
+            <ProfileInfo /> 
+            <MyPosts state={props.state} dispatch={props.dispatch} />
         </main>
     )
 }

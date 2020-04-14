@@ -6,8 +6,7 @@
     grid-template-columns: 2fr 10fr;
 
     height: 100vh;
-    background-color: #000;
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.8);
 
     border: 4px solid #66ff00;
     box-shadow: 0 0 15px #66ff00;
