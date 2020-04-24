@@ -13,8 +13,8 @@ const Navbar = () => {
                 <li className={s.item}><NavLink to="news" activeClassName={s.activeLink}>News</NavLink></li>
                 <li className={s.item}><NavLink to="music" activeClassName={s.activeLink}>Music</NavLink></li>
                 <li className={s.item}><NavLink to="setting" activeClassName={s.activeLink}>Settings</NavLink></li>
+                <li className={s.item}><NavLink to="users" activeClassName={s.activeLink}>Users</NavLink></li>
             </ul>
-            <Friends />
         </nav>
     )
 }

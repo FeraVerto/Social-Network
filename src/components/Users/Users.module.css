@@ -1,0 +1,47 @@
+.usersInfo {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    padding-left: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    box-shadow: 0 0 15px #ff00de;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.usersAvatar {
+    width: 110px;
+}
+
+
+.photo {
+    box-shadow: 0 0 15px white;
+    border: 2px solid white;
+}
+
+.userInfo {
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userStatus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.userStatusText {
+    font-style: italic;
+}
+
+.userLocation {
+   margin-right: 40%;
+}
+
+.userName {
+    font-size: 30px;
+}
