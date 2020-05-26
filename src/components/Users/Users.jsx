@@ -28,7 +28,8 @@ let Users = (props) => {
                         </div>
                         <div className={s.usersFollow}>
                             {u.followed
-                                ? <button onClick={() => {
+                                ? <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
+                                    props.toogleFollowingProgress(true, u.id);
                                     Axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,
                                         {
                                             withCredentials: true,
@@ -40,10 +41,12 @@ let Users = (props) => {
                                         if (response.data.resultCode === 0) {
                                             props.unfollow(u.id);
                                         }
+                                        props.toogleFollowingProgress(false, u.id);
                                     });
 
                                 }}>Unfollow</button>
-                                : <button onClick={() => {
+                                : <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
+                                    props.toogleFollowingProgress(true, u.id);
                                     Axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {},
                                         {
                                             withCredentials: true,
@@ -55,6 +58,7 @@ let Users = (props) => {
                                         if (response.data.resultCode === 0) {
                                             props.follow(u.id);
                                         }
+                                        props.toogleFollowingProgress(false, u.id);
                                     });
 
 
