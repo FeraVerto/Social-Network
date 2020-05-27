@@ -12,15 +12,16 @@ const instance = Axios.create({
 export const usersAPI = {
     getUsers(currentPage = 1, pageSize = 10) {
         return instance.get(`users?page=${currentPage}&count=${pageSize}`).then(response => response.data);
+    },
+
+    follow(userId) {
+       return instance.post(`follow/${userId}`);
+    
+    },
+
+    unfollow(userId) {
+      return instance.delete(`follow/${userId}`);
     }
 
-    // getUsersFollow(id) {
-    //     return instance.post(`follow/${id}`).then(response => console.log(response.data));
-    // },
-
-    // getUsersUnfollow (id) {
-    //     return instance.delete(`follow/${id}`).then(response => console.log(response.data));
-    // }
-    
 }
 
