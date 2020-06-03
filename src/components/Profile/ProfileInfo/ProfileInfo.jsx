@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from '../../common/Preloader/Preloader';
+import ProfileStatus from './ProfileStatus';
 
 const ProfileInfo = (props) => {
 
@@ -14,6 +15,7 @@ const ProfileInfo = (props) => {
             </div>
             <div className={s.userInfo}>
                 <span className={s.userName}>{props.profile.fullName}</span>
+                <ProfileStatus status={'Не унывайте, пацаны!'}/>
                 <ul className={s.listInfo}>
                     <li>Date of Brith: 2 january</li>
                     <li>City: Springwood</li>
