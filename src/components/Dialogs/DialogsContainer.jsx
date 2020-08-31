@@ -15,8 +15,8 @@ let mapStateToProps = (state) => {
 }
 
 let mapDispatchToProps = (dispatch) => {
+    
     return {
-
         addMessage: (newMessageText) => {
             dispatch(sendMessageActionCreator(newMessageText));
         }

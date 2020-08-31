@@ -28,16 +28,7 @@ const Dialogs = (props) => {
 }
 
 
-const addMessageForm = (props) => {
-
-    let addMessage = () => {
-        props.addMessage();
-    }
-
-    let onMessageChange = (e) => {
-        let newMessageText = e.target.value;
-        props.updateNewMessageText(newMessageText);
-    }
+const AddMessageForm = (props) => {
     return (
         <form className={s.messageAdd} onSubmit={props.handleSubmit}>
             <div>
@@ -50,7 +41,7 @@ const addMessageForm = (props) => {
     )
 }
 
-const AddMessageFormRedux = reduxForm({ form: 'dialogaddMessageForm' })(addMessageForm);
+const AddMessageFormRedux = reduxForm({ form: 'dialogAddMessageForm' })(AddMessageForm);
 
 
 
