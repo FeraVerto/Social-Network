@@ -3,6 +3,41 @@
 
     margin-left: 15px;
     background-color: rgba(0, 0, 0, 0.8);
-   /* border: 4px solid #66ff00;*/
     box-shadow: 0 0 15px #66ff00;
+    /* border: 4px solid #66ff00; */
 }
+
+@media screen and (max-width: 670px) {
+    .mainContent {
+       margin: 0;
+       padding: 0;
+       padding-left: 15px;
+       padding-right: 15px;
+       box-shadow: none;
+    }
+}
+
+
+/*
+
+@media screen and (max-width: 1880px) {
+
+}
+
+@media screen and (max-width: 1230px) {
+
+}
+
+@media screen and (max-width: 990px) {
+
+}
+
+@media screen and (max-width: 670px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+*/

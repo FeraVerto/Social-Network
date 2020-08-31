@@ -40,3 +40,25 @@
     height: 40px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 1880px) {
+
+}
+
+@media screen and (max-width: 1230px) {
+
+}
+
+@media screen and (max-width: 990px) {
+
+}
+
+@media screen and (max-width: 670px) {
+    .dialogs {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+}

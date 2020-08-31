@@ -1,11 +1,11 @@
 .app-wrapper {
   margin: 0 auto;
   display: grid;
-  width: 1200px;
+  max-width: 1200px;
 
   grid-template-areas:
-  "h h"
-  "n c";
+    "h h"
+    "n c";
 
   grid-template-rows: 80px 1fr;
   grid-template-columns: 2fr 10fr;
@@ -13,11 +13,42 @@
 }
 
 .app-wrapper-content {
-    grid-area: c;
+  grid-area: c;
 
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
+@media screen and (max-width: 670px) {
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .app-wrapper-content {
+  }
 
+}
 
+/*
+
+@media screen and (max-width: 1880px) {
+
+}
+
+@media screen and (max-width: 1230px) {
+
+}
+
+@media screen and (max-width: 990px) {
+
+}
+
+@media screen and (max-width: 670px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+*/

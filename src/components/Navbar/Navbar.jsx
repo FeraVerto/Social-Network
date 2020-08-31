@@ -7,6 +7,9 @@ import Friends from './Friends/Friends';
 const Navbar = () => {
     return (
         <nav className={s.nav}>
+            <div className={s.navbar_mobile}>
+               <span className={s.menu_mobile}>Menu</span> 
+            </div>
             <ul className={s.list}>
                 <li className={s.item}><NavLink to="/profile" activeClassName={s.activeLink}>Profile</NavLink></li>
                 <li className={s.item}><NavLink to="/dialogs" activeClassName={s.activeLink}>Messages</NavLink></li>

@@ -66,3 +66,50 @@
   position: absolute;
   right: 0;
 }
+
+@media screen and (max-width: 670px) {
+  .background {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .userContact {
+    margin-top: 15px;
+    position: relative;
+    border: 2px solid red;
+  }
+
+  .profileInfoContacts {
+    margin-right: 0;
+    flex-direction: row;
+  }
+
+  .profileInfoContacts li {
+    height: auto;
+  }
+}
+/*
+
+@media screen and (max-width: 1880px) {
+
+}
+
+@media screen and (max-width: 1230px) {
+
+}
+
+@media screen and (max-width: 990px) {
+
+}
+
+@media screen and (max-width: 670px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+*/
