@@ -2,8 +2,10 @@
   padding-left: 30px;
   padding-right: 30px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+
+  position: relative;
 
   grid-area: h;
 
@@ -36,19 +38,26 @@
 .loginBlock {
   width: 70px;
   height: 50px;
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00,
-  0 0 100px #00ff00, 0 0 150px #00ff00;
+  /* box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00,
+  0 0 100px #00ff00, 0 0 150px #00ff00; */
   text-align: center;
+}
+
+.buttonLogOut {
+  position: absolute;
+  width: 80px;
+  right: 0;
+  top: 0;
 }
 
 .imgLogo {
   width: 70px;
   height: 50px;
   color: #faebd7;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de,
+  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de,
     0 0 100px #ff00de, 0 0 150px #ff00de;
   box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00,
-  0 0 100px #00ff00, 0 0 150px #00ff00;
+  0 0 100px #00ff00, 0 0 150px #00ff00; */
 }
 
 
@@ -64,9 +73,6 @@
 
 
 @media screen and (max-width: 1880px) {
-  .loginBlock {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1230px) {
