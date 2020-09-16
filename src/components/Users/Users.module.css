@@ -46,23 +46,5 @@
     font-size: 30px;
 }
 
-.number {
-    margin-left: 30px;
-}
 
-.selectedPage {
-    font-weight: bold;
-    border: 1px solid white;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-}
-
-.number span { 
-    margin-right: 5px;
-    margin-bottom: 5px;
-    padding-left: 18px;
-    width: 36px;
-    display: inline-block;
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
