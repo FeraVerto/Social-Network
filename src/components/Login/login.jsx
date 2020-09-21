@@ -30,7 +30,7 @@ const LoginForm = ({handleSubmit, error}) => {
                     component={Input} />
                 Запомнить меня
             </div>
-            {error && <div className={s.formSummaryError}> {  error} </div>}
+            {error && <div className={s.formSummaryError}> { error } </div>}
             <div>
                 <button>Login</button>
             </div>

@@ -11,9 +11,10 @@ body {
   font-size: 20px;
   word-spacing: 3px;
 
-  background: 0 0 url("https://i.ytimg.com/vi/JV_-FIzk-kc/maxresdefault.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background: 0 0 url("https://i.ytimg.com/vi/JV_-FIzk-kc/maxresdefault.jpg") no-repeat; */
+  background-color: #000;
+  /* background-size: cover;
+  background-attachment: fixed; */
 }
 
 code {

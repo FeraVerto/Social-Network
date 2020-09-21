@@ -15,7 +15,6 @@
 }
 
 .logo {
-  margin-left: 80px;
   color: #ffffff;
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00,
     0 0 100px #00ff00, 0 0 150px #00ff00;
@@ -69,6 +68,19 @@
 .mobileMenu {
   display: none;
 }
+
+/*Временная заглушка*/
+.header_search {
+  display: flex;
+}
+
+.header_search button {
+  margin: 0;
+  width: auto;
+}
+
+/*Временная заглушка*/
+
 
 @media screen and (max-width: 1880px) {
 }

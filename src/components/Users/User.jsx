@@ -40,7 +40,7 @@ let User = ({ user, followingInProgress, unfollow, follow }) => {
                     </div>
                 </div>
 
-            </div>)
+            </div>
 
 
         </div>)

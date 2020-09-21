@@ -23,7 +23,7 @@ const ProfileInfo = ({profile, status, updateStatus}) => {
                     <li>Job: {profile.lookingForAJob}</li>
                 </ul>
             </div>
-            <div className={s.userContact}>{profile.website}
+            {/* <div className={s.userContact}>{profile.website}
                 <ul className={s.profileInfoContacts}>
                     <li><a href={profile.contacts.facebook}>FB</a></li>
                     <li><a href={profile.contacts.website}>Web</a></li>
@@ -33,7 +33,7 @@ const ProfileInfo = ({profile, status, updateStatus}) => {
                     <li><a href={profile.contacts.youtube}>YB</a></li>
                     <li><a href={profile.contacts.github}>GH</a></li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }
