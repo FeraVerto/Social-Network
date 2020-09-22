@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Setting from './components/Setting/Setting';
-import { BrowserRouter, Route, withRouter } from 'react-router-dom';
+import { HashRouter, Route, withRouter } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Login from './components/Login/login';
@@ -30,24 +30,23 @@ class App extends React.Component {
 
   render() {
 
-    if (!this.props.initialized) {
-      return <Preloader />
-    }
-
+    // if (!this.props.initialized) {
+    //   return <Preloader />
+    // }
     return (
       <div className='app-wrapper'>
         <HeaderContainer />
         <Navbar />
         <Suspense fallback={<Preloader />}>
-        <div className='app-wrapper-content'>
-          <Route path="/dialogs" render={withSuspense(DialogsContainer)} />
-          <Route path="/profile/:userId?" render={withSuspense(ProfileContainer)} />
-          <Route path="/users" render={() => <UsersContainer />} />
-          <Route path="/news" component={News} />
-          <Route path="/music" component={Music} />
-          <Route path="/setting" component={Setting} />
-          <Route path="/login" component={() => <Login />} />
-        </div>
+          <div className='app-wrapper-content'>
+            <Route path="/dialogs" render={withSuspense(DialogsContainer)} />
+            <Route path="/profile/:userId?" render={withSuspense(ProfileContainer)} />
+            <Route path="/users" render={() => <UsersContainer />} />
+            <Route path="/news" component={News} />
+            <Route path="/music" component={Music} />
+            <Route path="/setting" component={Setting} />
+            <Route path="/login" component={() => <Login />} />
+          </div>
         </Suspense>
       </div >
     );
@@ -64,11 +63,12 @@ let AppContainer = compose(
   connect(mapStateToProps, { initializeApp }))(App);
 
 let MainApp = (props) => {
-  return <BrowserRouter>
+  return <HashRouter>
     <Provider store={store}>
       <AppContainer />
+      
     </Provider>
-  </BrowserRouter>
+  </HashRouter>
 }
 
 export default MainApp;

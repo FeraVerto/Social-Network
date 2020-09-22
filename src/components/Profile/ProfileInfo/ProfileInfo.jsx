@@ -3,16 +3,18 @@ import s from './ProfileInfo.module.css';
 import Preloader from '../../common/Preloader/Preloader';
 import ProfileStatus from './ProfileStatus';
 import ProfileStatusWithHooks from './ProfileStatusWithHooks';
+import userPhoto from '../../../assets/images/base-avatar.png';
+
 
 const ProfileInfo = ({profile, status, updateStatus}) => {
 
-    if (!profile) {
-        return <Preloader />
-    }
+    // if (!profile) {
+    //     return <Preloader />
+    // }
     return (
         <div className={s.background}>
             <div className={s.userAvatar}>
-                <img src={profile.photos.large} alt="Freddy"></img>
+                <img src={profile.photos.large || userPhoto} alt="Freddy"></img>
             </div>
             <div className={s.userInfo}>
                 <span className={s.userName}>{profile.fullName}</span>
