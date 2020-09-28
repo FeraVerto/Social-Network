@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import s from './Paginator.module.css';
-import cn from "classnames";
+import classNames from "classnames";
 
 
-let Paginator = ({ totaItemsCount, pageSize, currentPage, onPageChange, portionSize = 10 }) => {
-    let pagesCount = Math.ceil(totaItemsCount / pageSize);
+let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChange, portionSize = 10}) => {
+    let pagesCount = Math.ceil(totalItemsCount / pageSize);
     let pages = [];
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i);
@@ -12,6 +12,7 @@ let Paginator = ({ totaItemsCount, pageSize, currentPage, onPageChange, portionS
 
     let portionCount = Math.ceil(pagesCount / portionSize);
     let [portionNumber, setPortionNumber] = useState(1);
+
     let leftPortionPageNumber = (portionNumber - 1) * portionSize + 1;
     let rightPortionPageNumber = portionNumber * portionSize;
 
@@ -24,11 +25,11 @@ let Paginator = ({ totaItemsCount, pageSize, currentPage, onPageChange, portionS
                 .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
                 .map((p) => {
                     return <div className={s.number}>
-                        <span className={cn({
+                        <span className={classNames({
                             [s.selectedPage]: currentPage === p
                         }, s.pageNumber)}
                             key={p}
-                            onClick={(p) => {
+                            onClick={() => {
                                 onPageChange(p);
                             }}>{p}</span>
                     </div>
