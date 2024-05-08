@@ -1,20 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, "Quantico", sans-serif, "Source Code Pro", BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff;
+  /* background: no-repeat url('assets/image/background-moon.jpeg') black fixed;
+  background-size: cover; */
+  background-color: #0000AA;
+  color: white;
   font-size: 20px;
   word-spacing: 3px;
-
-  /* background: 0 0 url("https://i.ytimg.com/vi/JV_-FIzk-kc/maxresdefault.jpg") no-repeat; */
-  background-color: #000;
-  /* background-size: cover;
-  background-attachment: fixed; */
 }
 
 code {
@@ -23,8 +22,8 @@ code {
 
 textarea {
   background-color: #000;
-  border-color: #66ff00;
-  box-shadow: 0 0 15px #66ff00;
+  border-color: white;
+  /* box-shadow: 0 0 15px white; */
   color: #fff;
   font-family: inherit;
   padding: 7px;
@@ -39,8 +38,7 @@ button {
   font-family: inherit;
 
   background-color: #000;
-  border-color: #66ff00;
-  box-shadow: 0 0 15px #66ff00;
+  border-color: #fff;
+  /* box-shadow: 0 0 15px #fff; */
 }
-
 

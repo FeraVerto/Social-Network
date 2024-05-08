@@ -1,124 +1,122 @@
 .background {
-    margin-left: 30px;
-    padding-top: 30px;
-    display: flex;
+  margin-left: 30px;
+  padding-top: 30px;
+  display: flex;
 }
 
 .profileData {
-    margin-left: 50px;
-    margin-top: -10px;
+  margin-left: 50px;
+  margin-top: -10px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .userName {
-    font-size: 30px;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 80px #ffffff, 0 0 90px #ffffff,
-    0 0 100px #ffffff, 0 0 150px #ffffff;
+  font-size: 30px;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px #ffffff, 0 0 80px #ffffff, 0 0 90px #ffffff, 0 0 100px #ffffff,
+    0 0 150px #ffffff;
 }
 
 .userAvatar {
-    margin: 0;
-    padding: 0;
-    max-width: 180px;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
 }
 
 .userAvatar img {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 180px;
-    box-shadow: 0 0 15px #ff00de;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  box-shadow: 0 0 15px #ff00de;
 }
 
 .listInfo {
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  list-style: none;
 }
 
 .listInfo b {
-    color: #66ff00;
+  color: #66ff00;
 }
 
 .profileInfoContacts {
-    margin: 0;
-    margin-top: 15px;
-    padding: 0;
-    display: flex;
-    list-style: none;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  display: flex;
+  list-style: none;
 }
 
 .profileInfoContact {
-    width: 30px;
+  width: 30px;
 }
 
 .background button {
-    width: 100%;
+  width: 100%;
 }
 
 .background label {
-    margin-top: 10px;
-    margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 
-    position: relative;
+  position: relative;
 
-    text-transform: uppercase;
-    font-size: 14px;
-    text-align: center;
-    border: 2px solid #66ff00;
-    box-shadow: 0 0 15px #66ff00;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #66ff00;
+  box-shadow: 0 0 15px #66ff00;
 }
 
 .userAvatarAdd {
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
 }
 
 .form {
-    margin-top: -12px;
-    display: flex;
+  margin-top: -12px;
+  display: flex;
 
-    justify-content: space-between;
-    margin-left: 50px;
+  justify-content: space-between;
+  margin-left: 50px;
 }
 
 .form button {
-    width: 100px;
+  width: 100px;
 }
 
 .listInfo textarea {
-    margin-top: 10px;
-    width: 250px;
+  margin-top: 10px;
+  width: 250px;
 }
 
 .form .userName input {
-    width: 250px;
-    height: 25px;
+  width: 250px;
+  height: 25px;
 }
 
 .form .userContact {
-
 }
 
 .form .profileInfoContacts {
-    margin: 0;
-    padding: 0;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 /*.userName {
  font-size: 30px;
@@ -231,4 +229,3 @@
 
 }
  */
- 

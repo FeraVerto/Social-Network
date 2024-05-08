@@ -1,64 +1,60 @@
 .dialogs {
-    margin-left: 15px;
+  margin-left: 15px;
 
-    display: grid;
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
 
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
 
-    border: 4px solid #66ff00;
-    box-shadow: 0 0 15px #66ff00;
+  border: 4px solid #66ff00;
+  box-shadow: 0 0 15px #66ff00;
 }
 
 .dialogsItems {
-    padding: 10px;
+  padding: 10px;
 }
 
 .dialogsItems .active {
-    color: green;
+  color: green;
 }
 
 .messages {
-    margin-right: 20px;
-    padding: 10px;
+  margin-right: 20px;
+  padding: 10px;
 }
 
 .messageAdd {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .addText {
-    width: 100%;
+  width: 100%;
 }
 
 .button {
-    display: block;
-    width: 101%;
-    height: 40px;
-    text-transform: uppercase;
+  display: block;
+  width: 101%;
+  height: 40px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1880px) {
-
 }
 
 @media screen and (max-width: 1230px) {
-
 }
 
 @media screen and (max-width: 990px) {
-
 }
 
 @media screen and (max-width: 670px) {
-    .dialogs {
-        margin: 0;
-    }
+  .dialogs {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    
 }

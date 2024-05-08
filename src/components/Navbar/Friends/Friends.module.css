@@ -4,17 +4,14 @@
 }
 
 .item {
-    list-style: none;
+  list-style: none;
 }
 
 .item a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .item a.activeLink {
   color: gold;
 }
-
-
-

@@ -1,15 +1,14 @@
 .app-wrapper {
   margin: 0 auto;
   display: grid;
-  max-width: 1200px;
+  max-width: 1400px;
 
   grid-template-areas:
     "h h"
     "n c";
 
-  grid-template-rows: 80px 1fr;
+  grid-template-rows: 90px 1fr;
   grid-template-columns: 2fr 10fr;
-  /*grid-gap: 10px;*/
 }
 
 .app-wrapper-content {
@@ -18,34 +17,3 @@
   margin-top: 15px;
 }
 
-@media screen and (max-width: 670px) {
-  .app-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-}
-
-/*
-
-@media screen and (max-width: 1880px) {
-
-}
-
-@media screen and (max-width: 1230px) {
-
-}
-
-@media screen and (max-width: 990px) {
-
-}
-
-@media screen and (max-width: 670px) {
-
-}
-
-@media screen and (max-width: 320px) {
-
-}
-
-*/

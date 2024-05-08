@@ -1,39 +1,39 @@
 .dialogs {
-    display: grid;
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 3fr 10fr;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 3fr 10fr;
 }
 
 .dialog {
-    min-width: 150px;
-    padding: 10px;
+  min-width: 150px;
+  padding: 10px;
 }
 
 .dialog .active {
-    color: green;
+  color: green;
 }
 
 .messages {
-    padding: 10px;
+  padding: 10px;
 }
 
 .avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 
-    border: 2px solid #66ff00;
-    box-shadow: 0 0 15px #66ff00;
+  border: 2px solid #66ff00;
+  box-shadow: 0 0 15px #66ff00;
 }
 
 .linkDialog {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .dialogName {
-    margin-left: 10px;
+  margin-left: 10px;
 }

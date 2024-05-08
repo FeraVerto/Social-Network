@@ -1,0 +1,84 @@
+.dialog_window
+  height: 800px
+  display: flex
+  flex-direction: column
+
+  .dialog_header
+    margin: 20px
+    height: 50px
+    display: flex
+    justify-content: space-between
+
+  .dialog_footer
+    margin-bottom: 20px
+    margin-top: 20px
+    height: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .button
+      border: 2px solid black
+      width: 150px
+      font-size: 20px
+      font-weight: bold
+      background-color: white
+
+    .dialog_footer_textarea
+      outline: none
+      border-radius: 5px
+      width: 465px
+      height: 70px
+      align-items: stretch
+      box-sizing: border-box
+
+  .dialog_body
+    display: flex
+    justify-content: space-around
+    flex-grow: 1
+
+    color: white
+
+    .message_one,
+    .message_two
+      margin-bottom: 10px
+      width: 200px
+      color: black
+      height: content-box
+
+      background: #088cb7
+      position: relative
+      -moz-border-radius: 12px
+      -webkit-border-radius: 12px
+      border-radius: 12px
+
+      .message_one:before,
+      .message_two:before
+        content: ""
+        width: 0
+        height: 0
+        right: 100%
+        top: 38px
+        position: absolute
+        border-top: 13px solid transparent
+        border-right: 26px solid #088cb7
+        border-bottom: 13px solid transparent
+
+
+textarea
+  padding: 0
+  margin: 0
+  height: 70px
+
+  border: none
+  outline: none
+  border-bottom: 2px solid hsl(211, 100%, 50%)
+  background-color: black
+  color: white
+  font-size: 20px
+  box-sizing: border-box
+
+.button_message
+  width: 100px
+  height: 70px
+
