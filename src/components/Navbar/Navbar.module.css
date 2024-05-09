@@ -1,11 +1,10 @@
 .nav {
-  margin-top: 15px;
-  width: 190px;
+  width: 100%;
   height: 100vh;
   grid-area: n;
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 4px solid #fff;
-  /* box-shadow: 0 0 15px #66ff00; */
+  background-color: #0000AA;
+  border: 1px solid #fff;
+  box-sizing: border-box;
 }
 
 .nav_list {
@@ -19,21 +18,18 @@
   list-style: none;
   margin-top: 15px;
   margin-bottom: 20px;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 17px;
+  font-family: IBMVGA8 ,monospace;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .nav_item a {
   color: white;
   text-decoration: none;
-
 }
 
 .nav_item  a.activeLink {
   color: #faebd7;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00de, 0 0 20px #ff00de,
-    0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de,
-    0 0 150px #ff00de;
   padding-left: 10px;
 }
 
@@ -69,7 +65,7 @@
     display: block;
     box-shadow: 0 0 15px #66ff00;
 
-    font-family: 'Press Start 2P', cursive;
+    font-family: IBMVGA8 ,monospace;
     font-size: 20px;
     text-align: center;
     line-height: 20px;

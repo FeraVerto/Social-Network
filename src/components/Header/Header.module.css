@@ -4,52 +4,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: end;
 
   position: relative;
 
   grid-area: h;
 
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 4px solid #fff;
+  /* background-color: #0000AA; */
+  border: 1px solid #fff;
   /* box-shadow: 0 0 15px #fff; */
 }
 
-/* .logo {
-  color: #ffffff;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
-    0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00,
-    0 0 150px #00ff00;
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 800;
-  font-family: 'Press Start 2P', cursive;
-} */
-
-/* .logo:hover {
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00de, 0 0 20px #ff00de,
-    0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de,
-    0 0 150px #ff00de;
-} */
+.avatar {
+  margin-right: 10px;
+}
 
 .loginBlock {
-  /* width: 70px;
-  height: 50px; */
   display: flex;
   align-items: center;
-  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
-    0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00,
-    0 0 150px #00ff00; */
+  justify-content: space-between;
 }
 
 .loginBlock button {
   margin-top: 0;
   margin-left: 10px;
-  width: 80px;
-}
-
-.loginBlock button:hover {
-  /* box-shadow: 0 0 5px #ffffff, 0 0 10px #ff00de, 0 0 20px #ff00de,
-    0 0 40px #ff00de, 0 0 80px #ff00de; */
+  width: 170px;
+  height: 40px;
 }
 
 .imgLogo {
@@ -72,18 +52,6 @@
 .mobileMenu {
   display: none;
 }
-
-/*Временная заглушка*/
-.header_search {
-  display: flex;
-}
-
-.header_search button {
-  margin: 0;
-  width: auto;
-}
-
-/*Временная заглушка*/
 
 @media screen and (max-width: 1880px) {
 }

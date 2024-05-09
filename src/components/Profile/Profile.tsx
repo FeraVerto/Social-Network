@@ -1,5 +1,4 @@
 import React from 'react';
-import s from './Profile.module.sass';
 import { MyPostsContainer } from './MyPosts/MyPostsContainer';
 import { ProfileInfo } from './ProfileInfo/ProfileInfo';
 
@@ -13,7 +12,7 @@ export const Profile = ({
   refreshProfile,
 }: any) => {
   return (
-    <main className={s.main_profile}>
+    <main>
       <ProfileInfo
         isOwner={isOwner}
         profile={profile}

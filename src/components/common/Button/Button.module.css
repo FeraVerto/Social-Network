@@ -1,8 +1,11 @@
-.header_search {
-    display: flex;
+.button {
+    font-size: 20px;
 }
-  
-.header_search button {
-    margin: 0;
-    width: auto;
+
+.button::before {
+    content: "[ ";
+}
+
+.button::after {
+    content: " ]";
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import s from './Button.module.css';
 
 type ButtonType = {
   style?: string;
@@ -18,7 +19,7 @@ export const Button: React.FC<ButtonType> = ({
 }) => {
   return (
     <button
-      // className={s.button + ' ' + style}
+      className={s.button + ' ' + style}
       onChange={onChange}
       onClick={onClick}
       disabled={disabled}

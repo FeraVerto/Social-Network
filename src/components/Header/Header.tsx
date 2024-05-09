@@ -16,19 +16,31 @@ const Header: React.FC<HeaderType> = ({ userData, logoutTC }) => {
       <div className={s.site_name}>{/* <span>S</span>pacebook */}</div>
 
       <header className={s.header}>
-        <div className={s.header_search}>
+        {/* <div className={s.header_search}>
           <input type="search" name="search" />
           <button className={s.header_search_button}>Search</button>
-        </div>
-        {photo?.small === '' ? (
-          <img src={avatar} width="40px" height="40px" alt="avatar" />
-        ) : (
-          <img src={photo?.small} width="40px" height="40px" alt="avatar" />
-        )}
+        </div> */}
 
         {isAuth ? (
           //? <div>{login} <button onClick={logoutTC}>Log out</button></div>
           <div className={s.loginBlock}>
+            {photo?.small === '' ? (
+              <img
+                src={avatar}
+                className={s.avatar}
+                width="40px"
+                height="40px"
+                alt="avatar"
+              />
+            ) : (
+              <img
+                src={photo?.small}
+                className={s.avatar}
+                width="40px"
+                height="40px"
+                alt="avatar"
+              />
+            )}
             {login} <Button onClick={logoutTC}>Log out</Button>
           </div>
         ) : (

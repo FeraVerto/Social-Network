@@ -1,9 +1,13 @@
-import s from './ProfileInfoDescription.module.sass';
+import s from './ProfileInfoDescription.module.css';
 import React from 'react';
-import { ContactsType, ProfileType } from '../../../../types/types';
+import { ContactsType, PhotosType, ProfileType } from '../../../../types/types';
+import avatar from './../../../../assets/images/base-avatar.png';
+import { ProfileStatusWithHook } from '../ProfileInfoStatus/ProfileStatusWithHook';
 
 type ProfileInfoDescriptionType = {
   profile: ProfileType;
+  status?: string;
+  updateStatus?: (status: string) => void;
 };
 
 export const ProfileInfoDescription: React.FC<ProfileInfoDescriptionType> = (
@@ -28,43 +32,60 @@ export const ProfileInfoDescription: React.FC<ProfileInfoDescriptionType> = (
   return (
     <div>
       {props.profile !== null && (
-        <ul className={s.list}>
-          <li className={s.item}>
-            {/*<span className={s.item_fullName}>fullName:</span>*/}
-            <span className={s.item_fullName}>
-              <b>{props.profile.fullName}</b>
-            </span>
-          </li>
+        <>
+          <table className={s.table}>
+            <caption className={s.table_caption}>
+              <span className={s.item_fullName}>
+                <b>{props.profile.fullName}</b>
+              </span>
+            </caption>
 
-          {props.profile.lookingForAJobDescription && (
-            <li className={s.item}>
-              <span>Description:</span>
-              {props.profile.lookingForAJobDescription}
-            </li>
-          )}
+            <thead className={s.table_thead}>
+              <tr className={s.table_title_row}>
+                <th className={s.table_title}>
+                  {props.profile.lookingForAJobDescription && (
+                    <li className={s.item}>
+                      <span>Description</span>
+                    </li>
+                  )}
+                </th>
+                <th className={s.table_title}>
+                  {props.profile.lookingForAJobDescription && (
+                    <li className={s.item}>
+                      <span>looking For A Job</span>
+                    </li>
+                  )}
+                </th>
+                <th className={s.table_title}>
+                  {props.profile.lookingForAJobDescription && (
+                    <li className={s.item}>
+                      <span>About Me</span>
+                    </li>
+                  )}
+                </th>
+              </tr>
+            </thead>
 
-          {props.profile.lookingForAJob && (
-            <li className={s.item}>
-              <span>looking For A Job:</span>
-              {props.profile.lookingForAJob}
-            </li>
-          )}
-
-          {props.profile.aboutMe && (
-            <li className={s.item}>
-              <span>About Me:</span>
-              {props.profile.aboutMe}
-            </li>
-          )}
-
-          {/*<div>
-                    Contacts:
-                    {
-                        props.profile &&
-                        Object.keys(props.profile.contacts).map(c => <div key={"contacts." + c}>{props.profile.contacts[c]}</div>)
-                    }
-                </div>*/}
-        </ul>
+            <tbody>
+              <tr className={s.table_item}>
+                <td>{props.profile.lookingForAJobDescription}</td>
+                <td>{props.profile.lookingForAJob}</td>
+                <td>{props.profile.aboutMe}</td>
+              </tr>
+              <tr className={s.table_status}>
+                <td>status:</td>
+                <tr>
+                  {props.status && props.updateStatus && (
+                    <ProfileStatusWithHook
+                      status={props.status}
+                      updateStatus={props.updateStatus}
+                    />
+                  )}
+                </tr>
+              </tr>
+            </tbody>
+          </table>
+        </>
       )}
     </div>
   );
