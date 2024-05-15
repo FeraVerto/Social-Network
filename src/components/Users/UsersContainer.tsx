@@ -9,6 +9,7 @@ import selectiors from '../../redux/users-selectors';
 import { Users } from './Users';
 import { UserType } from '../../types/types';
 import { ThunkDispatch } from 'redux-thunk';
+import s from './Users.module.css';
 
 type PathParamsType = {
   userId: string;
@@ -56,7 +57,7 @@ class UsersContainer extends React.Component<ContainerType> {
   };
 
   render = () => (
-    <>
+    <div className={s.pre_users}>
       {this.props.isFetching ? <Preloader /> : null}
 
       <Users
@@ -70,7 +71,7 @@ class UsersContainer extends React.Component<ContainerType> {
         followingInProgress={this.props.followingInProgress}
         onSearch={this.onSearch}
       />
-    </>
+    </div>
   );
 }
 

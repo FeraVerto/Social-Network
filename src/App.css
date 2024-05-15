@@ -18,6 +18,7 @@
 }
 
 .app-wrapper-content {
+  padding: 20px;
   grid-area: c;
   overflow-y: auto;
 }

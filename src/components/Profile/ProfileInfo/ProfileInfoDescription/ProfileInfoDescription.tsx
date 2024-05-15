@@ -13,21 +13,20 @@ type ProfileInfoDescriptionType = {
 export const ProfileInfoDescription: React.FC<ProfileInfoDescriptionType> = (
   props
 ) => {
-  /*userId: number
-    lookingForAJob: boolean
-    lookingForAJobDescription: string
-    fullName: string
-    aboutMe: string
-    contacts: ContactsType
-    photos: PhotosType*/
-  /* let contact = profile !== null && profile !== undefined && Object
-         .values(profile.contacts)
-         .filter(item => item !== null)
-         .map((a: any) => {
-             return <div key={a} className={s.contact}>
-                 <a rel="stylesheet" href={a}>{a} </a>
-             </div> //6326
-         })*/
+  let contacts =
+    props.profile !== null &&
+    props.profile !== undefined &&
+    Object.values(props.profile.contacts)
+      .filter((item) => item !== null)
+      .map((a: any) => {
+        return (
+          <div key={a} className={s.contacts}>
+            <a rel="stylesheet" href={a}>
+              {a}{' '}
+            </a>
+          </div>
+        ); //6326
+      });
 
   return (
     <div>
@@ -43,25 +42,19 @@ export const ProfileInfoDescription: React.FC<ProfileInfoDescriptionType> = (
             <thead className={s.table_thead}>
               <tr className={s.table_title_row}>
                 <th className={s.table_title}>
-                  {props.profile.lookingForAJobDescription && (
-                    <li className={s.item}>
-                      <span>Description</span>
-                    </li>
-                  )}
+                  <li className={s.item}>
+                    <span>Description</span>
+                  </li>
                 </th>
                 <th className={s.table_title}>
-                  {props.profile.lookingForAJobDescription && (
-                    <li className={s.item}>
-                      <span>looking For A Job</span>
-                    </li>
-                  )}
+                  <li className={s.item}>
+                    <span>looking For A Job</span>
+                  </li>
                 </th>
                 <th className={s.table_title}>
-                  {props.profile.lookingForAJobDescription && (
-                    <li className={s.item}>
-                      <span>About Me</span>
-                    </li>
-                  )}
+                  <li className={s.item}>
+                    <span>About Me</span>
+                  </li>
                 </th>
               </tr>
             </thead>
@@ -82,6 +75,10 @@ export const ProfileInfoDescription: React.FC<ProfileInfoDescriptionType> = (
                     />
                   )}
                 </td>
+              </tr>
+              <tr className={s.table_status}>
+                <td>social:</td>
+                <td colSpan={2}>{contacts}</td>
               </tr>
             </tbody>
           </table>

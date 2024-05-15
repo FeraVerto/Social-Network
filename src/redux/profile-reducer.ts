@@ -67,6 +67,7 @@ const getUserProfile = createAsyncThunk(
   'profile/getUserProfile',
   async (userId: string, { dispatch, getState }) => {
     let data = await usersAPI.getProfile(userId);
+    console.log();
     dispatch(setUserProfile(data));
   }
 );

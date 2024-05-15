@@ -1,46 +1,66 @@
-.usersInfo {
-  margin-bottom: 20px;
-  margin-left: 30px;
-  padding: 10px;
-  padding-left: 20px;
+.users {
+  margin: 0 auto;
+  margin-left: 10px;
+}
+
+.users_list {
+  margin-top: 25px;
+  margin-left: 67px;
 
   display: flex;
-  justify-content: space-between;
-
-  box-shadow: 0 0 15px #ff00de;
-  background-color: rgba(0, 0, 0, 0.8);
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
-.usersAvatar {
-  width: 110px;
-}
-
-.photo {
-  box-shadow: 0 0 15px white;
-  border: 2px solid white;
-}
-
-.userInfo {
-  margin-left: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.userStatus {
+.user {
+  margin-right: 30px;
+  box-sizing: border-box; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-content: space-between;
+  width: 230px;
+  margin-bottom: 40px;
 }
 
-.userStatusText {
-  font-style: italic;
+
+.user_avatar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 225px;
+  overflow: hidden;
 }
 
-.userLocation {
-  margin-right: 40%;
+.avatar {
+  width: 100%;
+  background-size: cover;
 }
 
-.userName {
-  font-size: 30px;
+.user_info_name {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.user_name {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Bungee', cursive;
+}
+
+.follow_unfollow_button {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid rgb(225, 225, 225);
+  color: rgb(225, 225, 225);
+  outline: none;
+}
+
+.pre_users {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }

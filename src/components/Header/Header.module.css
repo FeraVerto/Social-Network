@@ -1,6 +1,7 @@
 .header {
   padding-left: 30px;
   padding-right: 30px;
+  margin-left: 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +12,7 @@
   grid-area: h;
 
   /* background-color: #0000AA; */
-  border: 1px solid #fff;
+  border: 1px solid #96daff;
   /* box-shadow: 0 0 15px #fff; */
 }
 

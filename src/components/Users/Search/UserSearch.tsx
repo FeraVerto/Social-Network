@@ -1,6 +1,6 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import s from './UserSearch.module.sass';
+import s from './UserSearch.module.css';
 import { Button } from '../../common/Button/Button';
 
 export const UserSearch = (props: any) => {
