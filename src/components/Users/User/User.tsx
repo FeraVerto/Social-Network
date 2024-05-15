@@ -1,6 +1,6 @@
 import React from 'react';
 import s from '../Users.module.sass';
-import avatar from '../../../assets/images/base-avatar.png';
+import avatar from '../../../assets/images/base-avatar.jpg';
 import { NavLink } from 'react-router-dom';
 import { UserType } from '../../../types/types';
 

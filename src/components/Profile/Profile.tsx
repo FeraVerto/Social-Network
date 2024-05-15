@@ -1,6 +1,7 @@
 import React from 'react';
 import { MyPostsContainer } from './MyPosts/MyPostsContainer';
 import { ProfileInfo } from './ProfileInfo/ProfileInfo';
+import s from './Profile.module.css';
 
 export const Profile = ({
   isOwner,
@@ -12,7 +13,7 @@ export const Profile = ({
   refreshProfile,
 }: any) => {
   return (
-    <main>
+    <main className={s.mainContent}>
       <ProfileInfo
         isOwner={isOwner}
         profile={profile}

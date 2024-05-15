@@ -1,7 +1,7 @@
 import s from './ProfileInfoDescription.module.css';
 import React from 'react';
 import { ContactsType, PhotosType, ProfileType } from '../../../../types/types';
-import avatar from './../../../../assets/images/base-avatar.png';
+import avatar from './../../../../assets/images/base-avatar.jpg';
 import { ProfileStatusWithHook } from '../ProfileInfoStatus/ProfileStatusWithHook';
 
 type ProfileInfoDescriptionType = {
@@ -69,7 +69,7 @@ export const ProfileInfoDescription: React.FC<ProfileInfoDescriptionType> = (
             <tbody>
               <tr className={s.table_item}>
                 <td>{props.profile.lookingForAJobDescription}</td>
-                <td>{props.profile.lookingForAJob}</td>
+                <td>{String(props.profile.lookingForAJob)}</td>
                 <td>{props.profile.aboutMe}</td>
               </tr>
               <tr className={s.table_status}>

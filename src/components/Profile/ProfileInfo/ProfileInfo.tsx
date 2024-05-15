@@ -1,7 +1,7 @@
 import s from './ProfileInfo.module.css';
 import React, { useState } from 'react';
 import Preloader from '../../common/Preloader/Preloader';
-import avatar from './../../../assets/images/base-avatar.png';
+import avatar from './../../../assets/images/base-avatar.jpg';
 import { ProfileStatusWithHook } from './ProfileInfoStatus/ProfileStatusWithHook';
 import { NavLink } from 'react-router-dom';
 import { ProfileInfoDescription } from './ProfileInfoDescription/ProfileInfoDescription';
@@ -46,9 +46,6 @@ export const ProfileInfo: React.FC<ProfileInfoType> = ({
         <div className={s.avatar}>
           <img src={profile.photos.large || avatar} alt="user avatar" />
         </div>
-        {/* <div>
-          <ProfileStatusWithHook status={status} updateStatus={updateStatus} />
-        </div> */}
         <div className={s.button_block}>
           <Button style={s.profile_info_button}>Follow</Button>
         </div>

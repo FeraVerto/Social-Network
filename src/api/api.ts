@@ -93,9 +93,9 @@ type updateProfileType = {
 
 export const profileAPI = {
   getProfile(userId: string) {
-    console.warn('Obsolete method. Please profileAPI object');
+    // console.warn('Obsolete method. Please profileAPI object');
     return instance
-      .get<ProfileType>(`profile/${1079}`)
+      .get<ProfileType>(`profile/${userId}`)
       .then((response) => response.data);
   },
 

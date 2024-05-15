@@ -38,7 +38,7 @@ export const Settings: React.FC<any> = withRouter(({ match, history }) => {
 
   useEffect(() => {
     dispatch(getUserProfile(userId));
-  }, []);
+  }, [dispatch, getUserProfile, userId]);
 
   if (!userId) {
     userId = authorizedUserId;

@@ -2,7 +2,7 @@ import { Field, reduxForm } from 'redux-form';
 import { Input, Textarea } from '../../common/FormsControls/FormsControls';
 import React, { FormEventHandler } from 'react';
 import s from './ProfileInfoForm.module.sass';
-import avatar from '../../../assets/image/ufo-2.png';
+import avatar from '../../../assets/images/base-avatar.jpg';
 import { ProfileType } from '../../../types/types';
 import { Button } from '../../common/Button/Button';
 

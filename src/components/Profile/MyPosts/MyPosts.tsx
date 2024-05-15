@@ -1,6 +1,6 @@
 import React from 'react';
 import MyPost from './Post/MyPost';
-import s from './MyPosts.module.sass';
+import s from './MyPosts.module.css';
 import { Redirect } from 'react-router-dom';
 import { Field, InjectedFormProps, reduxForm } from 'redux-form';
 import validators from '../../../utils/validators/validators';

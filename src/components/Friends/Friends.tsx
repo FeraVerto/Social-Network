@@ -16,7 +16,6 @@ export const Friends = (props: any) => {
   let friends = useSelector<RootState, Array<UserType>>(
     (state) => state.usersPage.users
   );
-  console.log('friends', friends);
 
   return <div></div>;
 };

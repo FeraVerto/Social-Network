@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Header.module.css';
 import { NavLink } from 'react-router-dom';
-import avatar from './../../assets/images/base-avatar.png';
+import avatar from './../../assets/images/base-avatar.jpg';
 import { authType } from '../../redux/auth-reducer';
 import { Button } from '../common/Button/Button';
 

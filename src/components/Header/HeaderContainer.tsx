@@ -21,7 +21,7 @@ type mapStateToPropsType = {
 };
 
 type mapDispatchToPropsType = {
-  /*getUserAuthData: () => void*/
+  getUserAuthData: () => void;
   getUserPhoto: (userId: string) => void;
   logoutTC: () => void;
 };
@@ -32,12 +32,7 @@ type HeaderContainerType = RouteComponentProps<ParamsType> &
 
 class HeaderContainer extends React.Component<HeaderContainerType> {
   componentDidMount() {
-    /*//запрашиваем авторизационные данные
-        this.props.getUserAuthData()
-*/
-    //запрашиваем фото авторизованного пользователя
-    let userId = this.props.match.params.userId;
-    this.props.getUserPhoto(userId);
+    this.props.getUserAuthData();
   }
 
   render = () => <Header {...this.props} />;
@@ -63,7 +58,7 @@ export default connect<
   {},
   RootState
 >(mapStateToProps, {
-  /*getUserAuthData,*/
+  getUserAuthData: authActions.getUserAuthData,
   getUserPhoto: authActions.getUserPhoto,
   logoutTC: authActions.logoutTC,
 })(WithUrlUsersDataContainerComponent);

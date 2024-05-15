@@ -110,7 +110,6 @@ const AddMessageChatForm: React.FC<{ ws: WebSocket | null }> = ({ ws }) => {
     if (!message) {
       return;
     }
-    console.log('message', message);
     ws?.send(message);
     setMessage('');
   };

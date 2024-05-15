@@ -94,7 +94,6 @@ const savePhoto = createAsyncThunk(
   async (photo: string, { dispatch }) => {
     let res = await profileAPI.savePhoto(photo);
     if (res.data.resultCode === ResultCodesEnum.Success) {
-      console.log('res.data.data', res.data.data);
       //@ts-ignore
       dispatch(saveUserPhoto(res.data.data));
     }

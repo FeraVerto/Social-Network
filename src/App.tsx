@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { connect, Provider } from 'react-redux';
 import { compose } from 'redux';
-import { BrowserRouter, Redirect, Route } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 //store
 import { initializeApp } from './redux/app-reducer';
 import { RootState } from './redux/redux-store';
@@ -64,24 +64,30 @@ export class App extends React.Component<AppContainerType> {
         <Navbar />
         <Suspense fallback={<Preloader />}>
           <div className="app-wrapper-content">
-            <Route exact path="/" render={() => <Redirect to={'/profile'} />} />
-            <Route
-              path="/profile/:userId?"
-              render={() => <SuspendedProfileContainer />}
-            />
-            <Route
-              path="/dialogs"
-              render={() => <SuspendedDialogsContainer />}
-            />
-            <Route path="/friends" render={() => <Friends />} />
-            <Route path="/messages" render={() => <MessagesContainer />} />
-            <Route path="/users" render={() => <UsersContainer />} />
-            <Route path="/chat" render={() => <SuspendedChatPage />} />
-            <Route path="/settings" render={() => <Settings />} />
-            <Route path="/login" render={() => <Login />} />
-            <Route path="*" render={() => <div>404 NOT FOUND</div>} />{' '}
-          </div>{' '}
-        </Suspense>{' '}
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={() => <Redirect to={'/profile'} />}
+              />
+              <Route
+                path="/profile/:userId?"
+                render={() => <SuspendedProfileContainer />}
+              />
+              <Route
+                path="/dialogs"
+                render={() => <SuspendedDialogsContainer />}
+              />
+              <Route path="/friends" render={() => <Friends />} />
+              <Route path="/messages" render={() => <MessagesContainer />} />
+              <Route path="/users" render={() => <UsersContainer />} />
+              <Route path="/chat" render={() => <SuspendedChatPage />} />
+              <Route path="/settings" render={() => <Settings />} />
+              <Route path="/login" render={() => <Login />} />
+              <Route path="*" render={() => <div>404 NOT FOUND</div>} />
+            </Switch>
+          </div>
+        </Suspense>
       </div>
     );
   }
