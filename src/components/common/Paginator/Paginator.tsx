@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import s from '../Paginator/Paginator.module.sass';
+import s from '../Paginator/Paginator.module.css';
 import { Button } from '../Button/Button';
 
 let classNames = require('classnames');
@@ -19,8 +19,6 @@ export const Paginator: React.FC<PropsType> = ({
   onPageChanged,
   portionSize = 10,
 }) => {
-  //totalItemsCount -
-
   //pagesCount - все странички
   let pagesCount = Math.ceil(totalItemsCount / pageSize);
   let pages: Array<number> = [];

@@ -1,46 +1,39 @@
-.paginator {
-  margin-left: 25px;
-  margin-bottom: 25px;
-
-  width: auto;
-
+.users_paginator {
+  padding: 20px;
+  padding-bottom: 40px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  color: white;
 }
 
-.selectedPage {
-  font-weight: bold;
-  border: 1px solid #66ff00;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00de, 0 0 20px #ff00de,
-    0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de,
-    0 0 150px #ff00de;
-}
 
-.number span {
-  width: 70px;
-  height: 68px;
-
-  display: inline-block;
-
+.page {
+  width: 35px;
+  height: 35px;
   text-align: center;
-  border: 1px solid white;
-  background-color: rgba(0, 0, 0, 1);
+  border: 2px solid white;
 }
 
-.number span:hover,
-.paginator button:hover {
-  box-shadow: 0 0 15px #66ff00;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00de, 0 0 20px #ff00de,
-    0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de,
-    0 0 150px #ff00de;
+
+.pageNumber {
+  width: 50px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  outline: none;
+  border: none;
+
 }
 
-.paginator button {
-  margin: 0;
-  padding: 0;
-
-  width: 90px;
-  height: 70px;
-
-  font-size: 20px;
+.selectPage {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  color: hsl(31, 100%, 40%);
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid hsl(31, 100%, 40%);
 }
