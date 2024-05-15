@@ -74,14 +74,14 @@ export const ProfileInfoDescription: React.FC<ProfileInfoDescriptionType> = (
               </tr>
               <tr className={s.table_status}>
                 <td>status:</td>
-                <tr>
+                <td colSpan={2}>
                   {props.status && props.updateStatus && (
                     <ProfileStatusWithHook
                       status={props.status}
                       updateStatus={props.updateStatus}
                     />
                   )}
-                </tr>
+                </td>
               </tr>
             </tbody>
           </table>
