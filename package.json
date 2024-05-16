@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "https://FeraVerto.github.io/Social-Network",
+  "homepage": "http://FeraVerto.github.io/Social-Network",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
