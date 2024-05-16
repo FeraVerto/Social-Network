@@ -3,13 +3,16 @@ import * as serviceWorker from './serviceWorker';
 import { createRoot } from 'react-dom/client';
 import MainApp from './App';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 
 const container = document.getElementById('root');
 if (container !== null) {
   const root = createRoot(container);
   root.render(
     <React.StrictMode>
-      <MainApp />
+      <BrowserRouter basename="/Social-Network">
+        <MainApp />
+      </BrowserRouter>
     </React.StrictMode>
   );
 } else {
