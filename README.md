@@ -1,12 +1,10 @@
-#This is a training project
+## This is a training project
 
 http://FeraVerto.github.io/Social-Network
 
-<img middle="top" width="230" src="./src/assets//images/photo_2024-05-16_18-29-15.jpg" />
+<img middle="top" width="350" src="./src/assets//images/photo_2024-05-16_18-29-15.jpg" />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
