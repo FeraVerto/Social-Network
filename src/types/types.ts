@@ -10,15 +10,19 @@ export type PostType = {
   like: number;
 };
 
+// export type ContactsType = {
+//   github: string;
+//   vk: string;
+//   facebook: string;
+//   instagram: string;
+//   twitter: string;
+//   website: string;
+//   youtube: string;
+//   mainLink: string;
+// };
+
 export type ContactsType = {
-  github: string;
-  vk: string;
-  facebook: string;
-  instagram: string;
-  twitter: string;
-  website: string;
-  youtube: string;
-  mainLink: string;
+  [key: string]: string | undefined;
 };
 
 export type ProfileType = {

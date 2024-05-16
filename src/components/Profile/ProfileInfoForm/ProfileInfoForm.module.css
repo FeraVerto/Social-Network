@@ -1,0 +1,64 @@
+.edit_button {
+    width: 250px;
+    height: 50px;
+}
+
+.form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form_block {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form_block_info,
+.form_block_contacts {
+    min-width: 45%;
+}
+
+.item_form_aboutMe {
+    height: 300px;
+    font-family: inherit;
+}
+
+
+.item_form_job {
+    align-self: flex-start;
+}
+
+.item_form {
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gold;
+    font-size: 25px;
+}
+
+.item {
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.info_contacts {
+  color: white;
+}
+
+.item_contact {
+  width: 100%;
+}
+.formSummaryError {
+  color: red;
+}

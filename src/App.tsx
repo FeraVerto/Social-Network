@@ -82,6 +82,7 @@ export class App extends React.Component<AppContainerType> {
               <Route path="/messages" render={() => <MessagesContainer />} />
               <Route path="/users" render={() => <UsersContainer />} />
               <Route path="/chat" render={() => <SuspendedChatPage />} />
+              {/* @ts-ignore */}
               <Route path="/settings" render={() => <Settings />} />
               <Route path="/login" render={() => <Login />} />
               <Route path="*" render={() => <div>404 NOT FOUND</div>} />

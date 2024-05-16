@@ -107,6 +107,7 @@ const updateProfile = createAsyncThunk(
     //временно
     let userId = store.getState().auth.userData.id;
     let res = await profileAPI.updateProfile(dataForm);
+    console.log('dataForm store', dataForm);
     if (res.data.resultCode === ResultCodesEnum.Success) {
       //@ts-ignore
       dispatch(getUserProfile(userId));

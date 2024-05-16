@@ -9,6 +9,7 @@
 }
 
 .profile_info {
+  margin-right: 25px;
   display: flex;
   flex-direction: column;
 }

@@ -13,6 +13,7 @@ type ProfileInfoDescriptionType = {
 export const ProfileInfoDescription: React.FC<ProfileInfoDescriptionType> = (
   props
 ) => {
+  console.log('profile', props.profile);
   let contacts =
     props.profile !== null &&
     props.profile !== undefined &&
