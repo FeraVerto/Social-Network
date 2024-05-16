@@ -43,12 +43,14 @@ const validate = (values: ProfileType) => {
 
 const ProfileInfoForm: React.FC<
   InjectedFormProps<ProfileType, ProfileInfoFormType> & ProfileInfoFormType
-> = ({ handleSubmit, profile, savePhoto }) => {
+> = ({ handleSubmit, profile, savePhoto, initialValues }) => {
   const onMainPhotoSelected = (e: any) => {
     if (e.target.files.length) {
       savePhoto(e.target.files[0]);
     }
   };
+
+  console.log('initialValues', initialValues);
 
   return (
     <>
@@ -66,45 +68,40 @@ const ProfileInfoForm: React.FC<
         <div className={s.form_block}>
           <div className={s.form_block_info}>
             <div className={s.item_form}>
-              {' '}
               full Name:
               <Field
                 component={Input}
                 name={'fullName'}
-                placeholder={'Full name'}
                 className={`${s.item_form_fullName} ${s.item}`}
               />
             </div>
 
             <div className={s.item_form}>
-              {' '}
               looking For A Job Description:
               <Field
                 component={Input}
                 name={'lookingForAJobDescription'}
-                placeholder={'Empty'}
+                // placeholder={'Empty'}
                 className={`${s.item_form_description} ${s.item}`}
               />
             </div>
 
             <div className={s.item_form}>
-              {' '}
               About Me:
               <Field
                 component={Textarea}
                 name={'aboutMe'}
-                placeholder={'Empty'}
+                // placeholder={'Empty'}
                 className={`${s.item_form_aboutMe} ${s.item}`}
               />
             </div>
 
             <div className={s.item_form}>
-              {' '}
               looking For A Job:
               <Field
                 component={Input}
                 name={'lookingForAJob'}
-                placeholder={'Empty'}
+                // placeholder={'Empty'}
                 type={'checkbox'}
                 className={`${s.item_form_job} ${s.item}`}
               />
@@ -114,14 +111,14 @@ const ProfileInfoForm: React.FC<
           <div className={s.form_block_contacts}>
             <div>
               {profile?.contacts &&
-                Object.keys(profile.contacts).map((c) => (
+                Object.entries(profile.contacts).map((c) => (
                   <div className={s.item_form}>
-                    {c}
+                    {c[0]}
                     <Field
-                      key={c}
+                      key={c[0]}
                       component={Input}
                       name={'contacts.' + c}
-                      placeholder={'Empty'}
+                      // value={c[1]}
                       className={s.item}
                     />
                   </div>
