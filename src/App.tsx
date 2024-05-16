@@ -67,24 +67,39 @@ export class App extends React.Component<AppContainerType> {
             <Switch>
               <Route
                 exact
-                path="/"
-                render={() => <Redirect to={'/profile'} />}
+                path="/Social-Network/"
+                render={() => <Redirect to={'/Social-Network/profile'} />}
               />
               <Route
-                path="/profile/:userId?"
+                path="/Social-Network/profile/:userId?"
                 render={() => <SuspendedProfileContainer />}
               />
               <Route
-                path="/dialogs"
+                path="/Social-Network/dialogs"
                 render={() => <SuspendedDialogsContainer />}
               />
-              <Route path="/friends" render={() => <Friends />} />
-              <Route path="/messages" render={() => <MessagesContainer />} />
-              <Route path="/users" render={() => <UsersContainer />} />
-              <Route path="/chat" render={() => <SuspendedChatPage />} />
-              {/* @ts-ignore */}
-              <Route path="/settings" render={() => <Settings />} />
-              <Route path="/login" render={() => <Login />} />
+              <Route
+                path="/Social-Network/friends"
+                render={() => <Friends />}
+              />
+              <Route
+                path="/Social-Network/messages"
+                render={() => <MessagesContainer />}
+              />
+              <Route
+                path="/Social-Network/users"
+                render={() => <UsersContainer />}
+              />
+              <Route
+                path="/Social-Network/chat"
+                render={() => <SuspendedChatPage />}
+              />
+              <Route
+                path="/Social-Network/settings"
+                // @ts-ignore
+                render={() => <Settings />}
+              />
+              <Route path="/Social-Network/login" render={() => <Login />} />
               <Route path="*" render={() => <div>404 NOT FOUND</div>} />
             </Switch>
           </div>
