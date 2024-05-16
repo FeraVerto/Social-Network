@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "http://FeraVerto.github.io/Social-Network",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,6 +44,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint ."
   },
   "eslintConfig": {
@@ -68,6 +71,7 @@
     "@types/react-redux": "^7.1.33",
     "eslint-config-prettier": "^4.2.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^6.1.1",
     "globals": "^15.1.0",
     "prettier": "^2.8.7",
     "typescript-eslint": "^8.8.0"
